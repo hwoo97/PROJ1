@@ -127,12 +127,15 @@ module uart_top #(
 
     // ---------------------------------------------------------------
     // TX FIFO
+    // (declare full/empty first: tx_fifo_wr_en's initializer references
+    //  tx_fifo_full, and some tools require the referenced net to already
+    //  be declared at that point in the file)
     // ---------------------------------------------------------------
-    wire       tx_fifo_wr_en   = apb_write && (addr[7:0] == 8'h04) && !tx_fifo_full;
-    wire [7:0] tx_fifo_wr_data = pwdata[7:0];
     wire       tx_fifo_rd_en;
     wire [7:0] tx_fifo_rd_data;
     wire       tx_fifo_full, tx_fifo_empty;
+    wire       tx_fifo_wr_en   = apb_write && (addr[7:0] == 8'h04) && !tx_fifo_full;
+    wire [7:0] tx_fifo_wr_data = pwdata[7:0];
 
     sync_fifo #(.WIDTH(8), .DEPTH(TX_FIFO_DEPTH), .ADDR_WIDTH(3)) u_tx_fifo (
         .clk     (clk),
@@ -147,12 +150,14 @@ module uart_top #(
 
     // ---------------------------------------------------------------
     // RX FIFO
+    // (same ordering fix: declare full/empty before rx_fifo_rd_en's
+    //  initializer references rx_fifo_empty)
     // ---------------------------------------------------------------
     wire       rx_fifo_wr_en;
     wire [7:0] rx_fifo_wr_data;
-    wire       rx_fifo_rd_en = apb_read && (addr[7:0] == 8'h00) && !rx_fifo_empty;
     wire [7:0] rx_fifo_rd_data;
     wire       rx_fifo_full, rx_fifo_empty;
+    wire       rx_fifo_rd_en = apb_read && (addr[7:0] == 8'h00) && !rx_fifo_empty;
 
     sync_fifo #(.WIDTH(8), .DEPTH(RX_FIFO_DEPTH), .ADDR_WIDTH(3)) u_rx_fifo (
         .clk     (clk),
@@ -303,5 +308,22 @@ module uart_top #(
             default: prdata = 32'h0;
         endcase
     end
+
+    //---------------------------------------------------
+    //  // I/O pads — only the two pins that actually cross the die
+    //  boundary
+    //---------------------------------------------------
+         
+    // Output Driver
+    PADDO pad1(
+    	.A   (c_txd),
+        .PAD (TXD)
+    );
+                        
+    // Input Buffer
+    PADDI pad2(
+    	.PAD (RXD),
+        .Y   (c_rxd)
+    );
 
 endmodule

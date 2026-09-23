@@ -7,20 +7,13 @@
 # +libext : library extention
 # +libext+.v -y : xrun would compile .v files automatically in the specific folder decribed with -y option 
 
-# HEX file is defined at ../TESTBENCH/tb_cmsdk_mcu.v 
 xrun -64bit \
      +max_err_count+50 \
      +define+function_sim \
      -access +rwc \
      -profile \
      -profthread \
-     -gui \
      +libext+.v \
-     -incdir ../../RTL \
-     -incdir ../TESTBENCH \
-     -incdir /GPDK045 \
-     -y ../../RTL \
-     -y ../TESTBENCH \
      ../TESTBENCH/tb_uart_top.v \
      ../../RTL/baud_gen.v \
      ../../RTL/sync_fifo.v \

@@ -1,0 +1,9 @@
+1789651294 /home/hah015/cds.lib
+1790141884 /home/hah015/PROJ1/proj1_make/TOP/SIM/TESTBENCH/tb_uart_top.v
+1790088260 /home/hah015/PROJ1/proj1_make/TOP/RTL/baud_gen.v
+1790088317 /home/hah015/PROJ1/proj1_make/TOP/RTL/sync_fifo.v
+1790137874 /home/hah015/PROJ1/proj1_make/TOP/RTL/uart_rx.v
+1790137874 /home/hah015/PROJ1/proj1_make/TOP/RTL/uart_tx.v
+1790144579 /home/hah015/PROJ1/proj1_make/TOP/RTL/uart_top.v
+1790086032 /GPDK045/digital/giolib045_v3.5/vlog/pads_FF_s1vg.v
+1790086031 /GPDK045/digital/gsclib045_all_v4.4/gsclib045_svt_v4.4/gsclib045/verilog/slow_vdd1v0_basicCells.v

@@ -1,0 +1,12 @@
+xrun(64): 22.03-s012: (c) Copyright 1995-2023 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	22.03-s012: Started on Sep 23, 2026 at 15:27:23 KST
+xrun
+	-64bit
+	+max_err_count+50
+	+define+function_sim
+	-access +rwc
+	-profile
+	-profthread
+	-gui
+xrun: *E,NOMOPT: You have not specified a -R (or a -r <snapshot>) option, nor have you specified a source file for compilation.
+TOOL:	xrun(64)	22.03-s012: Exiting on Sep 23, 2026 at 15:27:24 KST  (total: 00:00:01)

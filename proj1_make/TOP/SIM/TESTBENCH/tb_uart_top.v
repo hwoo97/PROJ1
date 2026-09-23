@@ -221,5 +221,13 @@ module tb_uart_top;
         $display("[FAIL] global timeout");
         $finish;
     end
+    
+    // Make Dumpfile
+    initial begin
+	`ifdef function_sim
+		$dumpfile("../FUNCTION/DUMP/uart.vcd");
+		$dumpvars(0,tb_uart_top);
+	`endif
+    end
 
 endmodule

@@ -47,7 +47,7 @@ module uart_tx (
 
     reg [3:0]  os_cnt16;      // 0~15 oversampling counter (1 bit time = 16 ticks)
     reg [2:0]  bit_cnt;       // number of data bits transmitted so far
-    reg [2:0]  nbits;         // actual number of data bits to transmit (5~8)
+    reg [3:0]  nbits;         // actual number of data bits to transmit (5~8; needs 4 bits, since 8 overflows 3 bits)
     reg [7:0]  shift_reg;
     reg        parity_bit;
     reg        parity_en;
@@ -60,11 +60,11 @@ module uart_tx (
     // Decode the actual number of data bits
     always @(*) begin
         case (dbits_sel)
-            2'b00: nbits = 3'd8;
-            2'b01: nbits = 3'd7;
-            2'b10: nbits = 3'd6;
-            2'b11: nbits = 3'd5;
-            default: nbits = 3'd8;
+            2'b00: nbits = 4'd8;
+            2'b01: nbits = 4'd7;
+            2'b10: nbits = 4'd6;
+            2'b11: nbits = 4'd5;
+            default: nbits = 4'd8;
         endcase
     end
 

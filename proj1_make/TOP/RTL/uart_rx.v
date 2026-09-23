@@ -78,7 +78,7 @@ module uart_rx (
 
     reg [3:0] os_cnt16;     // 0~15 oversampling counter
     reg [2:0] bit_cnt;
-    reg [2:0] nbits;
+    reg [3:0] nbits;         // needs 4 bits, since 8 overflows 3 bits
     reg [7:0] shift_reg;
     reg       parity_calc;
     reg       stop_done;
@@ -86,11 +86,11 @@ module uart_rx (
     // Decode the actual number of data bits
     always @(*) begin
         case (dbits_sel)
-            2'b00: nbits = 3'd8;
-            2'b01: nbits = 3'd7;
-            2'b10: nbits = 3'd6;
-            2'b11: nbits = 3'd5;
-            default: nbits = 3'd8;
+            2'b00: nbits = 4'd8;
+            2'b01: nbits = 4'd7;
+            2'b10: nbits = 4'd6;
+            2'b11: nbits = 4'd5;
+            default: nbits = 4'd8;
         endcase
     end
 
