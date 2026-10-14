@@ -229,5 +229,11 @@ module tb_uart_top;
 		$dumpvars(0,tb_uart_top);
 	`endif
     end
-
+    
+    // Simulation	
+    initial begin
+	`ifdef pre_sdf_gate
+		initial $sdf_annotate("uart_top_delays.sdf", dut);
+	`endif
+    end
 endmodule

@@ -1,0 +1,402 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2024 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+[12:37:18.163249] Configured Lic search path (22.01-s003): 5280@172.31.52.241
+
+Version: 22.17-s071_1, built Wed Sep 11 20:37:05 PDT 2024
+Options: -files ./script/uart_project_45nm.tcl -log ./log/all.log 
+Date:    Wed Oct 14 12:37:18 2026
+Host:    kopo-seongnam (x86_64 w/Linux 3.10.0-1160.el7.x86_64) (20cores*80cpus*2physical cpus*Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz 28160KB) (394624392KB)
+PID:     34116
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+[12:37:18.384563] Periodic Lic check successful
+[12:37:18.384571] Feature usage summary:
+[12:37:18.384571] Genus_Synthesis
+
+
+
+***********************************************************************************************************
+***********************************************************************************************************
+
+
+
+Finished executable startup (0 seconds elapsed).
+
+Loading tool scripts...
+Finished loading tool scripts (14 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source ./script/uart_project_45nm.tcl
+#@ Begin verbose source ./script/uart_project_45nm.tcl
+@file(uart_project_45nm.tcl) 2: if {[file exists /proc/cpuinfo]} {
+  sh grep "model name" /proc/cpuinfo
+  sh grep "cpu MHz"    /proc/cpuinfo
+}
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+model name	: Intel(R) Xeon(R) Gold 5218R CPU @ 2.10GHz
+cpu MHz		: 799.932
+cpu MHz		: 891.064
+cpu MHz		: 813.903
+cpu MHz		: 800.573
+cpu MHz		: 799.932
+cpu MHz		: 3973.260
+cpu MHz		: 892.089
+cpu MHz		: 800.061
+cpu MHz		: 800.061
+cpu MHz		: 800.061
+cpu MHz		: 1029.364
+cpu MHz		: 800.189
+cpu MHz		: 3971.594
+cpu MHz		: 800.061
+cpu MHz		: 801.214
+cpu MHz		: 799.932
+cpu MHz		: 817.364
+cpu MHz		: 800.189
+cpu MHz		: 800.061
+cpu MHz		: 799.932
+cpu MHz		: 800.061
+cpu MHz		: 800.061
+cpu MHz		: 800.189
+cpu MHz		: 799.932
+cpu MHz		: 800.189
+cpu MHz		: 800.061
+cpu MHz		: 799.932
+cpu MHz		: 799.932
+cpu MHz		: 800.061
+cpu MHz		: 799.932
+cpu MHz		: 800.061
+cpu MHz		: 800.445
+cpu MHz		: 800.189
+cpu MHz		: 799.932
+cpu MHz		: 800.061
+cpu MHz		: 800.189
+cpu MHz		: 800.061
+cpu MHz		: 799.932
+cpu MHz		: 800.061
+cpu MHz		: 800.189
+cpu MHz		: 801.470
+cpu MHz		: 806.341
+cpu MHz		: 799.932
+cpu MHz		: 799.932
+cpu MHz		: 817.749
+cpu MHz		: 868.249
+cpu MHz		: 802.368
+cpu MHz		: 800.830
+cpu MHz		: 812.493
+cpu MHz		: 800.061
+cpu MHz		: 800.061
+cpu MHz		: 800.061
+cpu MHz		: 3722.808
+cpu MHz		: 800.573
+cpu MHz		: 801.342
+cpu MHz		: 800.445
+cpu MHz		: 800.317
+cpu MHz		: 799.932
+cpu MHz		: 800.317
+cpu MHz		: 800.701
+cpu MHz		: 800.317
+cpu MHz		: 800.830
+cpu MHz		: 800.189
+cpu MHz		: 800.445
+cpu MHz		: 800.317
+cpu MHz		: 800.189
+cpu MHz		: 800.189
+cpu MHz		: 801.599
+cpu MHz		: 800.061
+cpu MHz		: 800.445
+cpu MHz		: 800.189
+cpu MHz		: 800.061
+cpu MHz		: 800.189
+cpu MHz		: 800.830
+cpu MHz		: 800.189
+cpu MHz		: 800.189
+cpu MHz		: 808.520
+cpu MHz		: 800.445
+cpu MHz		: 800.958
+cpu MHz		: 800.317
+@file(uart_project_45nm.tcl) 7: puts "Hostname : [info hostname]"
+Hostname : localhost
+@file(uart_project_45nm.tcl) 13: set TOP_DESIGN  cmsdk_mcu
+@file(uart_project_45nm.tcl) 15: set LOG_DIR     "./log"
+@file(uart_project_45nm.tcl) 16: set RPT_DIR     "./report"
+@file(uart_project_45nm.tcl) 17: set UNMAPPED_DIR   "./unmapped"
+@file(uart_project_45nm.tcl) 18: set MAPPED_DIR     "./mapped"
+@file(uart_project_45nm.tcl) 21: set STD_LIB_PATH "/GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing"
+@file(uart_project_45nm.tcl) 22: set IO_LIB_PATH "/GPDK045/digital/giolib045_v3.5/timing"
+@file(uart_project_45nm.tcl) 23: set LEF_LIB_PATH "/GPDK045/digital/gsclib045_all_v4.4/gsclib045/lef ../../../GPDK045/digital/giolib045_v3.5/lef"
+@file(uart_project_45nm.tcl) 24: set RTL_PATH     "../RTL"
+@file(uart_project_45nm.tcl) 25: set QRC_FILE_PATH "GPDK045/digital/gsclib045_all_v4.4/gsclib045_tech/qrc/qx"
+@file(uart_project_45nm.tcl) 28: set LIB_LIST {fast_vdd1v0_basicCells.lib slow_vdd1v0_basicCells.lib pads_SS_s1vg.lib}
+@file(uart_project_45nm.tcl) 30: set LEF_LIST {gsclib045_tech.lef gsclib045_macro.lef giolib045.lef}
+@file(uart_project_45nm.tcl) 31: set QRC_LIST {gpdk045.tch}
+@file(uart_project_45nm.tcl) 33: set RTL_SOURCES "../RTL/baud_gen.v \
+		../RTL/sync_fifo.v \
+		../RTL/uart_rx.v \
+		../RTL/uart_tx.v \
+		../RTL/uart_top.v
+"
+@file(uart_project_45nm.tcl) 39: set_db auto_ungroup none
+  Setting attribute of root '/': 'auto_ungroup' = none
+@file(uart_project_45nm.tcl) 40: set_db max_cpus_per_server 2
+  Setting attribute of root '/': 'max_cpus_per_server' = 2
+@file(uart_project_45nm.tcl) 43: set_db syn_generic_effort high; # Default medium
+  Setting attribute of root '/': 'syn_generic_effort' = high
+@file(uart_project_45nm.tcl) 44: set_db syn_map_effort high;     # Default medium
+  Setting attribute of root '/': 'syn_map_effort' = high
+@file(uart_project_45nm.tcl) 45: set_db syn_opt_effort high;     # Default medium
+  Setting attribute of root '/': 'syn_opt_effort' = high
+@file(uart_project_45nm.tcl) 47: set_db init_lib_search_path [concat $STD_LIB_PATH $IO_LIB_PATH $LEF_LIB_PATH $QRC_FILE_PATH]
+  Setting attribute of root '/': 'init_lib_search_path' = /GPDK045/digital/gsclib045_all_v4.4/gsclib045/timing /GPDK045/digital/giolib045_v3.5/timing /GPDK045/digital/gsclib045_all_v4.4/gsclib045/lef ../../../GPDK045/digital/giolib045_v3.5/lef GPDK045/digital/gsclib045_all_v4.4/gsclib045_tech/qrc/qx
+@file(uart_project_45nm.tcl) 48: set_db init_hdl_search_path [concat $RTL_PATH]
+  Setting attribute of root '/': 'init_hdl_search_path' = ../RTL
+@file(uart_project_45nm.tcl) 50: read_libs ${LIB_LIST}
+
+  Message Summary for Library all 3 libraries:
+  ********************************************
+  Missing a function attribute in the output pin definition. [LBR-518]: 2
+  Missing library level attribute. [LBR-516]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 16
+  ********************************************
+ 
+Warning : Libraries have inconsistent nominal operating conditions. In the Liberty library, there are attributes called nom_voltage, nom_process and nom_temperature. Genus reports the message, if the respective values of the 2 given .libs differ. [LBR-38]
+        : The libraries are 'fast_vdd1v0' and 'slow_vdd1v0'.
+        : This is a common source of delay calculation confusion and should be avoided.
+Warning : Libraries have inconsistent nominal operating conditions. In the Liberty library, there are attributes called nom_voltage, nom_process and nom_temperature. Genus reports the message, if the respective values of the 2 given .libs differ. [LBR-38]
+        : The libraries are 'fast_vdd1v0' and 'giolib045'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.100000, 0.000000) in library 'fast_vdd1v0_basicCells.lib'.
+        : The nominal operating condition is represented, either by the nominal PVT values specified in the library source (via nom_process,nom_voltage and nom_temperature respectively), or by the default PVT values (1.0,1.0,1.0).
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'slow_vdd1v0_basicCells.lib'.
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 0.900000, 125.000000) in library 'pads_SS_s1vg.lib'.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Else the library cell will be marked as timing model i.e. unusable. Timing_model means that the cell does not have any defined function. If there is no output pin, Genus will mark library cell as unusable i.e. the attribute 'usable' will be marked to 'false' on the libcell. Therefore, the cell is not used for mapping and it will not be picked up from the library for synthesis. If you query the attribute 'unusable_reason' on the libcell; result will be: 'Library cell has no output pins.'Note: The message LBR-9 is only for the logical pins and not for the power_ground pins. Genus will depend upon the output function defined in the pin group (output pin) of the cell, to use it for mapping. The pg_pin will not have any function defined.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNA' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP10' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP2' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP3' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP4' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP5' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP6' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP7' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP8' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DECAP9' must have an output pin.
+Warning : Found libraries with and without pg_pin construct. [LBR-12]
+        : Libraries with and without pg_pin construct have been loaded.
+        : This can lead to issues later in the flow.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-9'.
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ACHCONX2 and slow_vdd1v0/ACHCONX2).  Deleting (slow_vdd1v0/ACHCONX2).
+        : Library cell names must be unique.  Any duplicates will be deleted.  Only the first (as determined by the order of libraries) will be retained.
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHX1 and slow_vdd1v0/ADDFHX1).  Deleting (slow_vdd1v0/ADDFHX1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHX2 and slow_vdd1v0/ADDFHX2).  Deleting (slow_vdd1v0/ADDFHX2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHX4 and slow_vdd1v0/ADDFHX4).  Deleting (slow_vdd1v0/ADDFHX4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFHXL and slow_vdd1v0/ADDFHXL).  Deleting (slow_vdd1v0/ADDFHXL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFX1 and slow_vdd1v0/ADDFX1).  Deleting (slow_vdd1v0/ADDFX1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFX2 and slow_vdd1v0/ADDFX2).  Deleting (slow_vdd1v0/ADDFX2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFX4 and slow_vdd1v0/ADDFX4).  Deleting (slow_vdd1v0/ADDFX4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDFXL and slow_vdd1v0/ADDFXL).  Deleting (slow_vdd1v0/ADDFXL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHX1 and slow_vdd1v0/ADDHX1).  Deleting (slow_vdd1v0/ADDHX1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHX2 and slow_vdd1v0/ADDHX2).  Deleting (slow_vdd1v0/ADDHX2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHX4 and slow_vdd1v0/ADDHX4).  Deleting (slow_vdd1v0/ADDHX4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/ADDHXL and slow_vdd1v0/ADDHXL).  Deleting (slow_vdd1v0/ADDHXL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X1 and slow_vdd1v0/AND2X1).  Deleting (slow_vdd1v0/AND2X1).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X2 and slow_vdd1v0/AND2X2).  Deleting (slow_vdd1v0/AND2X2).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X4 and slow_vdd1v0/AND2X4).  Deleting (slow_vdd1v0/AND2X4).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X6 and slow_vdd1v0/AND2X6).  Deleting (slow_vdd1v0/AND2X6).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2X8 and slow_vdd1v0/AND2X8).  Deleting (slow_vdd1v0/AND2X8).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND2XL and slow_vdd1v0/AND2XL).  Deleting (slow_vdd1v0/AND2XL).
+Warning : Multiply-defined library cell. [LBR-22]
+        : Library-cell name collision (fast_vdd1v0/AND3X1 and slow_vdd1v0/AND3X1).  Deleting (slow_vdd1v0/AND3X1).
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'LBR-22'.
+@file(uart_project_45nm.tcl) 51: read_physical -lef ${LEF_LIST}
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_HV' has no resistance value.
+        : If this is the expected behavior, this message can be ignored.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_2x1_HV_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_2x1_HV_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_1x2_HV_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M2_M1_1x2_HV_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_VH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_HH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_VV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_M_NH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_M_SH' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_2x1_VH_E' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_2x1_VH_W' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_1x2_VH_N' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M3_M2_1x2_VH_S' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_HV' has no resistance value.
+Info    : Via with no resistance will have a value of '0.0' assigned for resistance value. [PHYS-129]
+        : Via 'M4_M3_VV' has no resistance value.
+Warning : Maximum message print count reached. [MESG-11]
+        : Maximum print count of '20' reached for message 'PHYS-129'.
+Error   : File error. [FILE-100] [read_physical]
+        : Cannot open file 'giolib045.lef'
+        : Make sure that the file is a readable regular file and has the specified name.
+#@ End verbose source ./script/uart_project_45nm.tcl
+1
+Encountered problems processing file: ./script/uart_project_45nm.tcl
+WARNING: This version of the tool is 762 days old.
+@genus:root: 2> exit
+
+Lic Summary:
+[12:38:49.327082] Cdslmd servers: kopo-seongnam
+[12:38:49.327106] Feature usage summary:
+[12:38:49.327112] Genus_Synthesis
+
+Normal exit.
